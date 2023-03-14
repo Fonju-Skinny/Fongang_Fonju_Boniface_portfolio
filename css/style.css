@@ -758,7 +758,7 @@ body::before{
         left: 15px;
     }
     .experience .exp-block .cads .exp-content{
-        width: 400px;
+        width: 100%;
     }
 
 }

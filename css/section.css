@@ -583,7 +583,7 @@ p.res{
 }
 .faqs-block .faq{
     width: 500px;
-    height: 60px;
+    height: fit-content;
     display: flex ;
     flex-direction: column;
     justify-content: flex-start;
@@ -670,4 +670,13 @@ p.res{
     font-size: 18px;
     color: var(--light-color);
     font-weight:400;
+}
+
+@media (max-width:510px){
+    .faqs-block, .faqs-block .faq{
+        width: 100%;
+    }
+    .faqs-block .faq{
+        height: fit-content;
+    }
 }

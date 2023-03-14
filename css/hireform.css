@@ -1,0 +1,251 @@
+.hire-section{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.hiremebox {
+  background: var(--bg-color);
+  padding: 10px 20px;
+  /* box-shadow: var(--box-shadow); */
+  width: 300px;
+  height: 495px;
+  position: relative;
+  border: var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+ .hiremebox h1 {
+  font-size: 40px;
+  color: var(--black);
+}
+ .hiremebox h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: var(--black);
+  letter-spacing: 2.5px;
+}
+ .hiremebox p {
+  font-size: 20px;
+  text-transform: lowercase;
+  color: var(--black);
+}
+
+
+
+.reachme {
+  /* background: red; */
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ .reachme h4 {
+  font-size: 25px;
+  color: var(--light-color);
+  width: fit-content;
+  /* background: purple; */
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+}
+.reachme h4 span {
+  color: var(--green);
+}
+.reachme .reachsites {
+  /* background: blue; */
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  position: relative;
+  width: 100%;
+}
+ .reachme .reachsites button {
+  font-size: 30px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  color: var(--light-color);
+  background: var(--bg-color);
+}
+.reachme .reachsites button:hover{
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
+} 
+
+.divovv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin-top: 20px;
+}
+
+.divovv .buttu {
+  padding: 10px;
+  margin: 20px;
+  /* margin-bottom: 20px; */
+  font-size: 16px;
+  margin-bottom: -10px;
+  box-shadow: var(--box-shadow);
+  background: var(--bg-color);
+  color: var(--green);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.closeHire{
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  font-size: 25px;
+  background: var(--bg-color);
+  border: var(--border);
+  color: var(--light-color);
+  width: 90px;
+  height: 90px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-radius: 100%;
+}
+/* google form =================================== */
+.container1, .container2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background: var(--bg-color);
+  transform: translateX(100%);
+  opacity: 0;
+}
+.container1.active, .container2.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.container1 form{
+  height: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background: red; */
+  padding-top: 20px;
+  gap: 10px;
+
+}
+
+.container1 form .box{
+  width: 90%;
+  box-shadow: var(--box-shadow);
+  padding:10px ;
+  font-size: 20px;
+  border: var(--border);
+  border-radius: 10px;
+  background: var(--bg-color);
+  color: var(--light-color);
+
+}
+.container1 form .box:hover, .container1 form .box:focus-within{
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
+} 
+.container1 form .box:focus-within{
+  font-size: 18px;
+
+}
+.container1 form button.box{
+  margin-top: 50px;
+}
+
+
+
+
+.container2{
+  background: var(--bg-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.container2 h3{
+  margin-top: 30px;
+  color: var(--light-color);
+  font-size: 30px;
+}
+.container2 h3 span{
+  color: var(--black);
+}
+
+#myButton{
+  position: absolute;
+  background: var(--background-main-dec);
+  padding: 20px;
+  z-index: 100;
+}
+
+
+
+#whatbBg{
+  fill:var(--light-color);
+  /* border: 2px solid red; */
+}
+#color{
+  fill: var(--bg-color);
+  /* background: blue; */
+}
+
+
+
+
+#icon-change{
+  fill: var(--light-color);
+  box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

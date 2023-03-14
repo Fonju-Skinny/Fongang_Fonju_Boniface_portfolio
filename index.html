@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fongang portfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="./Assets/fontawesome-free-6.0.0-web/css/all.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Section css file link  -->
+    <link rel="stylesheet" href="./css/section.css" />
+
+    <!-- hire me forms css file link  -->
+    <link rel="stylesheet" href="./css/hireform.css" />
+
+    <!-- floating whatsapp css file links  -->
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.css" />
+    <script type="text/javascript" src="floating-wpp.min.js"></script>
+    <script type="text/javascript" src="floating-wpp.js"></script>
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <div class="user">
+        <img src="image/user-img.png" alt="" />
+        <h3>Fonju Boniface</h3>
+        <p>front-end developer</p>
+      </div>
+
+      <nav class="navbar">
+        <div class="tab-links add-link" onclick="openTab('home')">home</div>
+        <div class="tab-links" onclick="openTab('about')">about</div>
+        <div class="tab-links" onclick="openTab('services')">services</div>
+        <div class="tab-links" onclick="openTab('portfolio')">portfolio</div>
+        <div class="tab-links" onclick="openTab('contact')">contact</div>
+        <div class="tab-links" tabindex="0">
+          others <i class="fas fa-chevron-down"></i>
+
+          <nav class="navbar">
+            <div class="tab-links" onclick="openTab('skills')">skills</div>
+            <div class="tab-links" onclick="openTab('experience')">
+              experience
+            </div>
+            <div class="tab-links" onclick="openTab('resources')">
+              resources
+            </div>
+            <div class="tab-links" onclick="openTab('gallery')">gallery</div>
+            <div class="tab-links othersdrop" onclick="openTab('faqs')">
+              FAQs
+            </div>
+          </nav>
+        </div>
+        <div class="tab-links" onclick="openTab('hire')">Hire Me</div>
+      </nav>
+
+      <div class="icons"></div>
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <div class="themes">
+      <div id="theme-sun" class="fas" style="background: #fff"></div>
+      <div id="theme-moon" class="fas" style="background: #222"></div>
+      <div id="theme-blue" class="fas" style="background: #01021a"></div>
+      <div id="theme-purple" class="fas" style="background: purple"></div>
+      <div
+        id="theme-gradient"
+        class="fas"
+        style="background: linear-gradient(#ef2a4b, red)"
+      ></div>
+    </div>
+
+    <!-- theme toggler  -->
+
+    <!-- <div id="theme-toggler" class="fas fa-moon"></div> -->
+
+    <!-- home section starts  -->
+
+    <section class="home section tab-contents active-tab" id="home">
+      <div class="content">
+        <h3>Fonju Boniface</h3>
+        <p>i am a front-end developer</p>
+        <a href="#" class="btn">download CV</a>
+
+        <div id="time">
+          <div id="hour" class="dotts">00</div>
+          <div id="minutes" class="dotts">00</div>
+          <div id="seconds">00</div>
+          <div id="ampm">AM</div>
+        </div>
+
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+        <a href="#" class="fab fa-github"></a>
+      </div>
+
+      
+      <div class="credits credited">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <script>
+      setInterval(() => {
+        let yeaR = new Date().getFullYear();
+
+        let Years = document.getElementById('years');
+          Years.textContent = yeaR
+      })
+    </script>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about tab-contents" id="about">
+      <h1 class="heading"><span>about</span> me</h1>
+
+      <div class="row">
+        <div class="box-container">
+          <div class="box">
+            <h3>2+</h3>
+            <p>years of experience</p>
+          </div>
+          <div class="box">
+            <h3>450+</h3>
+            <p>satisfied clients</p>
+          </div>
+          <div class="box">
+            <h3>190+</h3>
+            <p>working hours</p>
+          </div>
+          <div class="box">
+            <h3>10+</h3>
+            <p>awards won</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <h3>my name is <span>shaikh anas</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil hic
+            eum magnam, ea nulla sit cumque explicabo dolorem illo itaque?
+          </p>
+          <a class="tab-links btn" onclick="openTab('hire')">Hire Me</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="progress">
+          <h3>web design <span>90%</span></h3>
+          <div class="bar bar-1-1"><span></span></div>
+          <h3>graphic design <span>75%</span></h3>
+          <div class="bar bar-1-2"><span></span></div>
+          <h3>UI/UX design <span>80%</span></h3>
+          <div class="bar bar-1-3"><span></span></div>
+        </div>
+
+        <div class="progress">
+          <h3>HTML <span>95%</span></h3>
+          <div class="bar bar-2-1"><span></span></div>
+          <h3>CSS <span>80%</span></h3>
+          <div class="bar bar-2-2"><span></span></div>
+          <h3>javascript <span>65%</span></h3>
+          <div class="bar bar-2-3"><span></span></div>
+        </div>
+      </div>
+       
+      <div class="credits ">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services tab-contents" id="services">
+      <h1 class="heading">my <span>services</span></h1>
+
+      <div class="box-container">
+        <div tabindex="0" class="box">
+          <i class="fas fa-code"></i>
+          <h3>web design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem quas delectus, laboriosam nulla dolore in.
+          </p>
+        </div>
+
+        <div tabindex="0" class="box">
+          <i class="fas fa-paint-brush"></i>
+          <h3>graphic design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem quas delectus, laboriosam nulla dolore in.
+          </p>
+        </div>
+
+        <div tabindex="0" class="box">
+          <i class="fas fa-mobile"></i>
+          <h3>responsive design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem quas delectus, laboriosam nulla dolore in.
+          </p>
+        </div>
+
+        <div tabindex="0" class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>digital marketing</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem quas delectus, laboriosam nulla dolore in.
+          </p>
+        </div>
+
+        <div tabindex="0" class="box">
+          <i class="fas fa-search-dollar"></i>
+          <h3>SEO marketing</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem quas delectus, laboriosam nulla dolore in.
+          </p>
+        </div>
+
+        <div tabindex="0" class="box">
+          <i class="fab fa-wordpress"></i>
+          <h3>wordpress</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem quas delectus, laboriosam nulla dolore in.
+          </p>
+        </div>
+      </div>
+       
+      <div class="credits ">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- portfolio section starts  -->
+
+    <section class="portfolio tab-contents" id="portfolio">
+      <h1 class="heading">my <span>portfolio</span></h1>
+
+      <div class="box-container">
+        <div tabindex="0" class="box">
+          <img src="image/img-1.jpg" alt="" />
+          <div class="content">
+            <h3>project 01</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-2.jpg" alt="" />
+          <div class="content">
+            <h3>project 02</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-3.jpg" alt="" />
+          <div class="content">
+            <h3>project 03</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-4.jpg" alt="" />
+          <div class="content">
+            <h3>project 04</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-5.jpg" alt="" />
+          <div class="content">
+            <h3>project 05</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-6.jpg" alt="" />
+          <div class="content">
+            <h3>project 06</h3>
+          </div>
+        </div>
+      </div>
+       
+      <div class="credits ">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact tab-contents" id="contact">
+      <h1 class="heading"><span>contact</span> me</h1>
+
+      <form action="" name="submit-to-google-sheet">
+        <input
+          type="text"
+          name="yourName"
+          class="box"
+          placeholder="your name..."
+        />
+        <input
+          type="email"
+          name="yourEmail"
+          class="box"
+          placeholder="your email..."
+        />
+        <input
+          type="text"
+          name="subjectMessage"
+          class="box"
+          placeholder="subject of message..."
+        />
+        <textarea
+          name="Message"
+          class="box"
+          placeholder="your message..."
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button type="submit" class="btn">send message</button>
+      </form>
+       
+      <div class="credits">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- SKILLS section STARTS ========================>  -->
+
+    <section class="skills tab-contents" id="skills">
+      <h1 class="heading"><span>Skil</span>ls</h1>
+      <div class="cards">
+        <div id="progess" tabindex="0" class="progess card1">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count1">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">HTML</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+
+        <div id="progess" tabindex="0" class="progess card1">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count1">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">CSS</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+
+        <div id="progess" tabindex="0" class="progess card2">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count2">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">JavaScript</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+
+        <div id="progess" tabindex="0" class="progess card4">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count4">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">Bootstrap</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+
+        <div id="progess" tabindex="0" class="progess card1">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count1">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">UI/UX Design</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+
+        <div id="progess" tabindex="0" class="progess card1">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count1">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">Logo Design</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+
+        <div id="progess" tabindex="0" class="progess card3">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count3">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">WordPress</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+
+        <div id="progess" tabindex="0" class="progess card4">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count4">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">Public Speaking</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+
+        <div id="progess" tabindex="0" class="progess card4">
+          <div class="card" id="card" tabindex="0">
+            <div class="counter count4">
+              <p class="count">0</p>
+              <span>%</span>
+            </div>
+            <span class="Title">Leadership & Empowermment</span>
+          </div>
+          <div class="show-pro"></div>
+        </div>
+      </div>
+
+       
+      <div class="credits">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- SKILLS section ENDS ========================>  -->
+
+    <!-- EXPERIENCE section STARTS ========================>  -->
+
+    <section class="experience tab-contents" id="experience">
+      <h1 class="heading"><span>Experien</span>ce</h1>
+      <p class="head-details">
+        The level of work i can do is based on some of the experience i have
+        working as a Web and Graphic Designer. Though, i spent most of my time
+        Learning more....
+      </p>
+      <div id="exp-block" tabindex="0" class="exp-block">
+        <div class="cads">
+          <div class="exp-content" id="exp-content" tabindex="0">
+            <span class="exp-years">1 year<sup>+</sup></span>
+            <p class="exp-data">As a Front-End developer and Designer</p>
+            <div class="bg-blur"></div>
+          </div>
+
+          <div class="exp-content" id="exp-content" tabindex="0">
+            <span class="exp-years">1 year<sup>+</sup></span>
+            <p class="exp-data">In Graphic Designing (Logo and Flyer design)</p>
+            <div class="bg-blur"></div>
+          </div>
+
+          <div class="exp-content exp-react" id="exp-content" tabindex="0">
+            <span class="exp-years">
+              <i class="fab fa-react"></i>
+              <i class="fab fa-node-js"></i>
+            </span>
+            <p class="exp-data">Still Learning MERN stack</p>
+            <div class="bg-blur"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="credits ">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- EXPERIENCE section ENDS ========================>  -->
+
+    <!-- RESOURCES section STARTS========================>  -->
+
+    <section class="experience tab-contents" id="resources">
+      <h1 class="heading"><span>Resour</span>ces</h1>
+      <p>
+        Some of the resouces i use in carrying out my
+        <b style="color: var(--black)">Projects</b> includes:
+      </p>
+      <div id="exp-block" tabindex="0" class="exp-block">
+        <div class="cads">
+          <div class="exp-content" id="exp-content" tabindex="0">
+            <span
+              class="exp-years fab fa-font-awesome"
+              style="color: var(--light-color)"
+            ></span>
+            <p class="exp-data res">
+              I use Fontawesome for
+              <b style="color: var(--light-color)">icons, SVGs</b> <br />
+              in my prjects and
+              <b style="color: var(--light-color)">It's realy cool.</b>
+            </p>
+            <div class="bg-blur"></div>
+          </div>
+
+          <div class="exp-content" id="exp-content" tabindex="0">
+            <span
+              class="exp-years fab fa-google"
+              style="color: var(--light-color)"
+            ></span>
+            <p class="exp-data res">
+              Google have almost all the resouces in tech, <br />
+              <b style="color: var(--light-color)"
+                >So i use it for research.
+              </b>
+            </p>
+            <div class="bg-blur"></div>
+          </div>
+
+          <div class="exp-content" id="exp-content" tabindex="0">
+            <span
+              class="exp-years fab fa-youtube"
+              style="color: var(--light-color)"
+            ></span>
+            <p class="exp-data res">
+              YouTube is and awesome application, which i use for <br /><b
+                style="color: var(--color-main)"
+                >research and many other awesome stuffs.</b
+              >
+            </p>
+            <div class="bg-blur"></div>
+          </div>
+        </div>
+      </div>
+       
+      <div class="credits ">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- RESOURCES section ENDS========================>  -->
+
+    <!-- GALLERY section starts  -->
+
+    <section class="portfolio tab-contents" id="gallery">
+      <h1 class="heading">Galle<span>ry</span></h1>
+
+      <div class="box-container">
+        <div tabindex="0" class="box">
+          <img src="image/img-1.jpg" alt="" />
+          <div class="content">
+            <h3>project 01</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-2.jpg" alt="" />
+          <div class="content">
+            <h3>project 02</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-3.jpg" alt="" />
+          <div class="content">
+            <h3>project 03</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-4.jpg" alt="" />
+          <div class="content">
+            <h3>project 04</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-5.jpg" alt="" />
+          <div class="content">
+            <h3>project 05</h3>
+          </div>
+        </div>
+
+        <div tabindex="0" class="box">
+          <img src="image/img-6.jpg" alt="" />
+          <div class="content">
+            <h3>project 06</h3>
+          </div>
+        </div>
+      </div>
+       
+      <div class="credits ">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- GALLERY section ends -->
+
+    <!-- FAQS section STARTS========================>  -->
+
+    <section class="faqs tab-contents" id="faqs">
+      <h1 class="heading"><span>FAQ</span>s</h1>
+      <div class="faqs-block">
+        <div class="faq" tabindex="0">
+          <span class="question-head"
+            ><h3 class="question">
+              What do you do with your spair time?
+            </h3></span
+          >
+          <div class="answer-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              officia laborum id dolores! Itaque non, quos laborum repellat
+              tempora iste asperiores dolor sint! Ad ex fugiat voluptatibus in,
+              eum non?
+            </p>
+          </div>
+        </div>
+
+        <div class="faq" tabindex="0">
+          <span class="question-head"
+            ><h3 class="question">
+              What do you do with your spair time?
+            </h3></span
+          >
+          <div class="answer-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              officia laborum id dolores! Itaque non, quos laborum repellat
+              tempora iste asperiores dolor sint! Ad ex fugiat voluptatibus in,
+              eum non?
+            </p>
+          </div>
+        </div>
+
+        <div class="faq" tabindex="0">
+          <span class="question-head"
+            ><h3 class="question">
+              What do you do with your spair time?
+            </h3></span
+          >
+          <div class="answer-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              officia laborum id dolores! Itaque non, quos laborum repellat
+              tempora iste asperiores dolor sint! Ad ex fugiat voluptatibus in,
+              eum non?
+            </p>
+          </div>
+        </div>
+
+        <div class="faq" tabindex="0">
+          <span class="question-head"
+            ><h3 class="question">
+              What do you do with your spair time?
+            </h3></span
+          >
+          <div class="answer-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              officia laborum id dolores! Itaque non, quos laborum repellat
+              tempora iste asperiores dolor sint! Ad ex fugiat voluptatibus in,
+              eum non?
+            </p>
+          </div>
+        </div>
+      </div>
+
+       
+      <div class="credits credited">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- FAQS section ENDS========================>  -->
+
+    <a class="tab-links add-link logo" onclick="openTab('home')"
+      ><img src="./image/LOGO-01.svg" class="" alt=""
+    /></a>
+
+    <!-- Hire Me section starts -->
+
+    <section class="hire tab-contents" id="hire">
+      <h1 class="heading"><span>Hire</span> Me</h1>
+
+      <div tabindex="0" class="hire-section" id="hire-section">
+        <div class="hiremebox">
+          <h1>Waow!!...</h1>
+          <h2>Hiring Me?...</h2>
+          <p>You won't regrate employing me! Mr/Ms...</p>
+          <div class="reachme">
+            <h4>Reach Me <span>Via...</span></h4>
+            <span class="reachsites">
+              <button id="openForm" class="fab fa-google"></button>
+              <button id="openChat" class="fab fa-whatsapp"></button>
+            </span>
+          </div>
+
+          <div class="divovv">
+            <button class="buttu">
+              <i style="color: var(--light-color)" class="fas fa-download"></i>
+              Download Resume
+            </button>
+          </div>
+
+          <!-- form ================ -->
+
+          <div id="googleFormSub" class="container1">
+            <span id="closeForm" class="closeHire">
+              <i class="fas fa-xmark"></i
+            ></span>
+            <form action="" name="submit-to-google-sheet">
+              <input
+                tabindex="0"
+                type="text"
+                name="HireyourName"
+                class="box"
+                placeholder="your name..."
+              />
+              <input
+                tabindex="0"
+                type="email"
+                name="HireyourEmail"
+                class="box"
+                placeholder="your email..."
+              />
+              <input
+                tabindex="0"
+                type="text"
+                name="HiresubjectMessage"
+                class="box"
+                placeholder="subject of message..."
+              />
+              <textarea
+                tabindex="0"
+                name="HireMessage"
+                class="box"
+                placeholder="your message..."
+                id=""
+                rows="6"
+              ></textarea>
+              <button tabindex="0" n type="submit" class="btn box">Okay</button>
+            </form>
+          </div>
+
+          <!-- WhatssApp Chat ================ -->
+
+          <div id="whatApp" class="container2">
+            <span id="closeChat" class="closeHire">
+              <i class="fas fa-xmark"></i
+            ></span>
+            <h3>Let's Chat On <br /><span>WhatsApp...</span></h3>
+
+            <div id="myButton"></div>
+          </div>
+        </div>
+
+        <!-- <p class="tab-any">Tab anywhere to exit</p> -->
+      </div>
+       
+      <div class="credits">
+        
+        created by <span>Fonju Boniface</span> | all rights reserved
+        <span>Lock Coder</span><br>
+        <span style="display:flex; text-align: center; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-copyright"></i> <p id="years"></p></span>
+        
+      </div>
+    </section>
+
+    <!-- Hire Me section ends -->
+
+    <!-- CONTACT SUCCESS MESSEGE STARTS=============>  -->
+    <section tabindex="0" style="font-size: 20px" id="msg">
+      <div class="content">
+        <i class="fa-sharp fa-solid fa-check"></i>
+        Your messege was sent <br />
+        Successfuly
+      </div>
+      <p class="tab-any">Tab anywhere to exit</p>
+    </section>
+    <!-- CONTACT SUCCESS MESSEGE ENDS========================>  -->
+
+    <script type="text/javascript">
+      $(function () {
+        $("#myButton").floatingWhatsApp({
+          phone: "654446066",
+          popupMessage: "Welcome!, I'm Fonju Boniface. Can we chat? ",
+          showPopup: true,
+        });
+      });
+    </script>
+
+    <!-- google sheet form submits js file link  -->
+    <script src="./js/form-google-sheet.js"></script>
+    <!-- hire me js file link  -->
+    <script src="./js/hire.js"></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <!-- section js file link  -->
+    <script src="./js/section.js"></script>
+
+    <!-- jquery js file link  -->
+
+    <!-- floating whatsapp js files link  -->
+  </body>
+</html>

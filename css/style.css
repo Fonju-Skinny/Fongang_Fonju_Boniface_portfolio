@@ -277,6 +277,9 @@ body::before{
 #menu-btn.fa-times{
     /* left: 210px; */
 }
+.rem{
+    display: none;
+}
 .themes{
     position: fixed;
     top:1.5rem; right: 2rem;
@@ -294,12 +297,9 @@ body::before{
     box-shadow: var(--box-shadow);
     text-align: center;
     background: var(--bg-color);
+    border: var(--border);
 }
 
-.themes .fas:hover{
-    /* box-shadow: var(--box-shadow); */
-    /* background: var(--bg-color); */
-}
 .themes .fas{
     width: 2rem;
     height: 2rem;
@@ -814,7 +814,9 @@ body::before{
     .logo{
         left: 10px;
     }
-
+    .rem{
+        display: flex;
+    }
 
 }
 

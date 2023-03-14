@@ -265,7 +265,7 @@ body::before{
     box-shadow: var(--box-shadow-inset);
 }
 #menu-btn.fa-times{
-    left: 210px;
+    /* left: 210px; */
 }
 .themes{
     position: fixed;
@@ -727,6 +727,8 @@ body::before{
 
     #menu-btn{
         display: initial;
+        top: 70px;
+        left: 15px;
     }
     .logo{
         left: 10px;

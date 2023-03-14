@@ -747,5 +747,10 @@ body::before{
         width:100%;
         border-right: 0;
     }
+    #menu-btn{
+        display: initial;
+        top: 70px;
+        left: 15px;
+    }
 
 }

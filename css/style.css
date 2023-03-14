@@ -710,7 +710,7 @@ body::before{
 @media (max-width:991px){
 
     .tab-contents{
-        padding: 50px 10px;
+        padding: 50px 10px 0 10px;
         
     }
     html{
@@ -758,7 +758,7 @@ body::before{
         left: 15px;
     }
     .experience .exp-block .cads .exp-content{
-        width: 100%;
+        width: 400px;
     }
 
 }

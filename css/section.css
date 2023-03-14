@@ -251,6 +251,7 @@
     gap: 10px;
     border-radius: 10px;
     overflow: hidden;
+    width: 400px;
 }
 
 
@@ -575,9 +576,10 @@ p.res{
     justify-content: center;
     align-items: center;
     /* width: 100%; */
-    padding: 20px;
+    /* padding: 20px; */
     gap: 30px;
-    background: var(--bg-color);
+    /* background: red; */
+    height: 80vh;
 }
 .faqs-block .faq{
     width: 500px;

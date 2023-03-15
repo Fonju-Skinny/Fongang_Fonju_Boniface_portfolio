@@ -14,3 +14,22 @@ function openTab(tabName) {
     event.currentTarget.classList.add("add-link")
     document.getElementById(tabName).classList.add("active-tab")
 }
+
+
+
+
+
+
+var CvLinks = document.getElementsByClassName("cv-links")
+var CvContents = document.getElementsByClassName("cv-contents")
+document.querySelector(".closeCV").addEventListener("click", () =>{
+    CvContent.classList.remove("active-cv")
+})
+
+function openCv(CvName) {
+
+    for(CvContent of CvContents){
+        CvContent.classList.remove("active-cv")
+    }
+    document.getElementById(CvName).classList.add("active-cv")
+}

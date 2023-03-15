@@ -8,28 +8,28 @@
 .hiremebox {
   background: var(--bg-color);
   padding: 10px 20px;
-  /* box-shadow: var(--box-shadow); */
   width: 300px;
   height: 495px;
   position: relative;
   border: var(--border);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
   border-radius: 10px;
 }
 
 
  .hiremebox h1 {
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: 800;
   color: var(--black);
 }
  .hiremebox h2 {
   font-size: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   color: var(--black);
-  letter-spacing: 2.5px;
+  font-weight: 800;
 }
  .hiremebox p {
   font-size: 20px;
@@ -40,7 +40,6 @@
 
 
 .reachme {
-  /* background: red; */
   padding: 10px;
   width: 100%;
   display: flex;
@@ -51,16 +50,14 @@
  .reachme h4 {
   font-size: 25px;
   color: var(--light-color);
+  padding: 20px;
   width: fit-content;
-  /* background: purple; */
   box-shadow: var(--box-shadow);
-  padding: 10px;
 }
 .reachme h4 span {
   color: var(--green);
 }
 .reachme .reachsites {
-  /* background: blue; */
   gap: 50px;
   display: flex;
   justify-content: center;
@@ -82,24 +79,26 @@
 } 
 
 .divovv {
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   margin-top: 20px;
 }
 
 .divovv .buttu {
-  padding: 10px;
+  padding: 15px;
   margin: 20px;
-  /* margin-bottom: 20px; */
   font-size: 16px;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
   box-shadow: var(--box-shadow);
   background: var(--bg-color);
-  color: var(--green);
-  border-radius: 10px;
+  color: var(--light-color);
   width: 100%;
+  text-align: center;
+}
+.divovv .buttu:hover{
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
 }
 
 .closeHire{

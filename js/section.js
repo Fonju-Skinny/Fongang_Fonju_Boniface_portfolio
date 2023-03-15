@@ -33,3 +33,11 @@ function openCv(CvName) {
     }
     document.getElementById(CvName).classList.add("active-cv")
 }
+
+
+
+
+
+
+
+

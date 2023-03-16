@@ -6,6 +6,7 @@ function openTab(tabName) {
     for(tabLink of tabLinks){
         tabLink.classList.remove("add-link")
     header.classList.remove('active');
+    menu.classList.remove('fa-times');
     }
 
     for(tabContent of tabContents){
@@ -20,19 +21,19 @@ function openTab(tabName) {
 
 
 
-var CvLinks = document.getElementsByClassName("cv-links")
-var CvContents = document.getElementsByClassName("cv-contents")
-document.querySelector(".closeCV").addEventListener("click", () =>{
-    CvContent.classList.remove("active-cv")
-})
+// var CvLinks = document.getElementsByClassName("cv-links")
+// var CvContents = document.getElementsByClassName("cv-contents")
+// document.querySelector(".closeCV").addEventListener("click", () =>{
+//     CvContent.classList.remove("active-cv")
+// })
 
-function openCv(CvName) {
+// function openCv(CvName) {
 
-    for(CvContent of CvContents){
-        CvContent.classList.remove("active-cv")
-    }
-    document.getElementById(CvName).classList.add("active-cv")
-}
+//     for(CvContent of CvContents){
+//         CvContent.classList.remove("active-cv")
+//     }
+//     document.getElementById(CvName).classList.add("active-cv")
+// }
 
 
 

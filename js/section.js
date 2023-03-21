@@ -39,6 +39,14 @@ function openCv(CvName) {
 
 
 
+let FootYear = document.querySelectorAll(".foot-year");
 
+FootYear.forEach((foot) => {
 
+    // foot.textContent = "wood worker";
+    setInterval(() => {
+        let yeaR = new Date().getFullYear();
+        foot.textContent = ":  "+ yeaR
+      })
+});
 

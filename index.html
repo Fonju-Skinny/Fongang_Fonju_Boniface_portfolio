@@ -861,7 +861,7 @@
             <span id="closeForm" class="closeHire">
               <i class="fas fa-xmark"></i
             ></span>
-            <form name="submit-to-google-sheet">
+            <form action="https://formspree.io/f/mnqybzzz" method="POST" id="my-form">
               <input
                 tabindex="0"
                 type="text"
@@ -873,7 +873,7 @@
                 tabindex="0"
                 type="email"
                 name="HireyourEmail"
-                class="box"
+                class="box email"
                 placeholder="your email..."
               />
               <input
@@ -909,6 +909,7 @@
 
         <!-- <p class="tab-any">Tab anywhere to exit</p> -->
       </div>
+      <div class="status"><div id="status"></div></div>
        
       <div class="credits">
         
@@ -932,6 +933,16 @@
     </section>
     <!-- CONTACT SUCCESS MESSEGE ENDS========================>  -->
 
+     <!-- CONTACT SUCCESS MESSEGE 2 STARTS=============>  -->
+     <section tabindex="0" style="font-size: 20px" class="msg" >
+      <div class="content">
+        <i class="fa-sharp fa-solid fa-check"></i>
+        Your messege was sent <br />
+        Successfuly
+      </div>
+      <p class="tab-any">Tab anywhere to exit</p>
+    </section>
+    <!-- CONTACT SUCCESS MESSEGE 2 ENDS========================>  -->
     <script type="text/javascript">
       $(function () {
         $("#myButton").floatingWhatsApp({

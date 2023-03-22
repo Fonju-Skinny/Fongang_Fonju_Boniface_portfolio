@@ -161,6 +161,10 @@
   color: var(--light-color);
 
 }
+.container1 form .box.email{
+  text-transform: lowercase;
+
+}
 .container1 form .box:hover, .container1 form .box:focus-within{
   box-shadow: var(--box-shadow-inset);
   color: var(--green);
@@ -174,7 +178,24 @@
   margin-bottom: 10px;
 }
 
+.status{
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.status #status{
+  color: var(--green);
+  width: fit-content;
+  padding:5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: var(--box-shadow-inset);
+  border-radius: 10px;
 
+}
 
 
 .container2{

@@ -1,3 +1,7 @@
+section.hire{
+  height: fit-content;
+}
+
 .hire-section{
   justify-content: center;
   align-items: center;
@@ -178,23 +182,15 @@
   margin-bottom: 10px;
 }
 
-.status{
+#status{
   width: 100%;
   margin: 20px 0;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.status #status{
-  color: var(--green);
-  width: fit-content;
-  padding:5px 20px;
-  font-size: 18px;
-  font-weight: 700;
-  box-shadow: var(--box-shadow-inset);
-  border-radius: 10px;
-
+  flex-direction: column;
+  gap: 20px;
 }
 
 
@@ -255,54 +251,40 @@
 
 
 
-.success{
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-background: var(--bg-color);
-top: 0;
-left: 0;
-color: var(--black);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-z-index: 1000;
-transform: scale(1);
-}
-
-.status{
+.span-message{
   background: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-  gap: 30px;
-}
-.status .content{
-  width: 200px;
-  height: 200px;
-  background: var(--bg-color);
-  color: var(--light-color);
-  box-shadow: var(--box-shadow-inset);
-  border-radius: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  text-align: center;
-  color: var(--light-color);
-}
-.status .content i{
-  font-size: 60px;
+  border: var(--border);
   color: var(--green);
+  padding:10px 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+.ButtoN-message{
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize; 
+  border: var(--border);
+  border-radius: 20px;
+  color: var(--green);
+  box-shadow: var(--box-shadow);
+  background: var(--bg-color);
+
 }
 
+.ButtoN-message:hover{
+  box-shadow: var(--box-shadow-inset);
+  color: var(--light-color);
+}
 
+.text-success{
+  color: var(--light-color);
+  font-size: 16px;
+}
 
 
 

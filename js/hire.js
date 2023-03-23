@@ -34,29 +34,48 @@ let closeChat = document.querySelector("#closeChat").addEventListener("click", (
 
 
 
-let Success = document.querySelector('.success')
-Success.addEventListener("click", () =>{
-  Success.classList.remove("success");
-})
 
 window.addEventListener("DOMContentLoaded", function () {
     // get the form elements defined in your form HTML above
-    Success.classList.remove("success");
     var form = document.getElementById("my-form");
     // var button = document.getElementById("my-form-button");
     var status = document.getElementById("status");
   
     // Success and Error functions for after the form is submitted
+
   
     function success() {
       form.reset();
       status.classList.add("success");
-      // status.innerHTML = "Thanks!";
+      let Success = document.querySelector(".success")
+      let span = document.createElement("div")
+      Success.appendChild(span)
+      
+      let text = document.createElement("span")
+      
+     
+
+      let ButtoN = document.createElement("button")
+      span.appendChild(text)
+      span.appendChild(ButtoN)
+      
+
+
+      text.classList.add("text-success")
+      span.classList.add("span-message")
+      ButtoN.classList.add("ButtoN-message")
+
+      text.textContent = "Your message was successfully sent"
+      ButtoN.textContent = "Okay"
+      
+      document.querySelector(".ButtoN-message").addEventListener("click", () => {
+        status.style.display = "none"
+      })
     }
   
     function error() {
       status.classList.add("error");
-      status.innerHTML = "Oops! There was a problem.";
+      status.innerHTML = "Oops! There was a problem. Try sending your massage later..";
     }
   
     // handle the form submission event

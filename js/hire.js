@@ -34,11 +34,14 @@ let closeChat = document.querySelector("#closeChat").addEventListener("click", (
 
 
 
-
+let Success = document.querySelector('.success')
+Success.addEventListener("click", () =>{
+  Success.classList.remove("success");
+})
 
 window.addEventListener("DOMContentLoaded", function () {
     // get the form elements defined in your form HTML above
-  
+    Success.classList.remove("success");
     var form = document.getElementById("my-form");
     // var button = document.getElementById("my-form-button");
     var status = document.getElementById("status");
@@ -48,7 +51,7 @@ window.addEventListener("DOMContentLoaded", function () {
     function success() {
       form.reset();
       status.classList.add("success");
-      status.innerHTML = "Thanks!";
+      // status.innerHTML = "Thanks!";
     }
   
     function error() {

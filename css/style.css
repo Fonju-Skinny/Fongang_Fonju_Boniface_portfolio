@@ -87,7 +87,7 @@ body.theme-purple{
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s ease-in-out;
 }
 
@@ -736,35 +736,6 @@ body::before{
     z-index: 0;
     overflow:hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

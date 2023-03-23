@@ -289,7 +289,7 @@
 .experience .exp-block .cads #exp-content:focus-within .exp-years 
 
 {
-    color: var(--light-color);
+    color: var(--color-fff-white);
 }
 .experience .exp-block .cads #exp-content:hover .bg-blur,
 .experience .exp-block .cads #exp-content:focus-within .bg-blur{
@@ -671,7 +671,14 @@ p.res{
     color: var(--light-color);
     font-weight:400;
 }
+/* .resoceContent{
+    color: var(--black);
+} */
 
+
+.cads .resoceContent:hover .exp-years{
+    color: var(--bg-color);
+}
 @media (max-width:510px){
     .faqs-block, .faqs-block .faq{
         width: 100%;
